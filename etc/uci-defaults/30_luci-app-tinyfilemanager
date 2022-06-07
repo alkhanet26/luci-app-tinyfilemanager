@@ -1,0 +1,10 @@
+#!/bin/sh
+
+uci -q batch <<-EOF >/dev/null
+	uci set  uhttpd.main.interpreter='.php=/usr/bin/php-cgi'
+	uci set  uhttpd.main.index_page='index.php, index.html'
+	uci commit uhttpd
+EOF
+
+/etc/init.d/uhttpd restart
+exit 0
