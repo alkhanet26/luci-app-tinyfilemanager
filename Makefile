@@ -7,7 +7,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=luci-app-tinyfilemanager
 LUCI_TITLE:=LuCI Tiny File Manager
 LUCI_PKGARCH:=all
-LUCI_DEPENDS:=php7 +php7-cgi +php7-mod-session +php7-mod-ctype +php7-mod-fileinfo +php7-mod-zip +php7-mod-iconv +php7-mod-mbstring +php7-mod-json +zoneinfo-asia 
+LUCI_DEPENDS:=+php7 +php7-cgi +php7-mod-session +php7-mod-ctype +php7-mod-fileinfo +php7-mod-zip +php7-mod-iconv +php7-mod-mbstring +php7-mod-json +zoneinfo-asia 
 PKG_VERSION:=2.4.7
 PKG_RELEASE:=1
 
