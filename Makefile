@@ -25,7 +25,6 @@ define Package/luci-app-tinyfilemanager/postinst
 #!/bin/sh
 rm -f /tmp/luci-indexcache
 rm -rf /tmp/luci-modulecache
-
 exit 0
 endef
 
