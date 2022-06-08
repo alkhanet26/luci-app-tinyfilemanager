@@ -6,5 +6,6 @@ uci -q batch <<-EOF >/dev/null
 	uci commit uhttpd
 EOF
 
+ln -s /www/tinyfilemanager/rootfs /
 /etc/init.d/uhttpd restart
 exit 0
