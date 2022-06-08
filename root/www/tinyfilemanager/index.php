@@ -1413,7 +1413,7 @@ if (isset($_GET['settings']) && !FM_READONLY) {
     global $cfg, $lang, $lang_list;
     ?>
 
-    <div class="col-md-8 offset-md-2 pt-3">
+    <div class="col-md-8 offset-md-2 pt-2">
         <div class="card mb-2 <?php echo fm_get_theme(); ?>">
             <h6 class="card-header">
                 <i class="fa fa-cog"></i>  <?php echo lng('Settings') ?>
@@ -1537,7 +1537,7 @@ if (isset($_GET['help'])) {
     global $cfg, $lang;
     ?>
 
-    <div class="col-md-8 offset-md-2 pt-3">
+    <div class="col-md-8 offset-md-2 pt-2">
         <div class="card mb-2 <?php echo fm_get_theme(); ?>">
             <h6 class="card-header">
                 <i class="fa fa-exclamation-circle"></i> <?php echo lng('Help') ?>
@@ -1962,7 +1962,7 @@ $num_folders = count($folders);
 $all_files_size = 0;
 $tableTheme = (FM_THEME == "dark") ? "text-white bg-dark table-dark" : "bg-white";
 ?>
-<form action="" method="post" class="pt-3">
+<form action="" method="post" class="pt-2">
     <input type="hidden" name="p" value="<?php echo fm_enc(FM_PATH) ?>">
     <input type="hidden" name="group" value="1">
     <div class="table-responsive">
