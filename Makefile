@@ -33,7 +33,6 @@ define Package/$(PKG_NAME)/postinst
 #!/bin/sh
 	rm -f /tmp/luci-indexcache
 	rm -rf /tmp/luci-modulecache
-	ln -s /www/tinyfilemanager/rootfs /
 	uci -q set uhttpd.main.interpreter='.php=/usr/bin/php-cgi'
 	uci -q add_list uhttpd.main.index_page='index.php'
 	uci -q commit uhttpd
