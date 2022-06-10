@@ -29,19 +29,6 @@ define Package/$(PKG_NAME)/install
 	cp -pR ./root/* $(1)/
 endef
 
-define Package/$(PKG_NAME)/postinst
-#!/bin/sh
-	rm -f /tmp/luci-indexcache
-	rm -rf /tmp/luci-modulecache
-	if ! grep -q ".php=/usr/bin/php-cgi" /etc/config/uhttpd; then
-		uci set uhttpd.main.interpreter='.php=/usr/bin/php-cgi'
-		uci add_list uhttpd.main.index_page='index.php'
-		uci commit uhttpd
-		/etc/init.d/uhttpd restart
-	fi
-exit 0
-endef
-
 define Package/$(PKG_NAME)/postrm
 #!/bin/sh
 	export DIR_PKG="tinyfilemanager"
