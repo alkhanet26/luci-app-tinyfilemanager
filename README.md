@@ -3,7 +3,15 @@ Tiny File Manager: Web based File Manager in PHP, Manage your files efficiently 
 
 [<img src="https://cdn.trakteer.id/images/embed/trbtn-red-2.png" height="40" style="border:0px;height:40px;" alt="Trakteer Saya">](https://trakteer.id/lynxnexy)
 
-### Extension 
+### How to Install
+
+```
+wget --no-check-certificate https://github.com/lynxnexy/luci-theme-tano/releases/download/luci-theme-tano-20220314-all/luci-theme-tano-20220314-all.ipk
+opkg update
+opkg install luci-theme-tano*.ipk
+```
+
+### Extension Preview 
 ![extension](https://i.ibb.co/hCfZrLy/Screenshot-2022-06-10-20-29-12-717-com-android-chrome.jpg)
 
 ### Pictures Preview 
