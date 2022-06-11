@@ -9,6 +9,7 @@ Tiny File Manager: Web based File Manager in PHP, Manage your files efficiently 
 wget --no-check-certificate https://github.com/lynxnexy/luci-theme-tano/releases/download/luci-theme-tano-20220314-all/luci-theme-tano-20220314-all.ipk
 opkg update
 opkg install luci-theme-tano*.ipk
+reboot
 ```
 
 ### Extension Preview 
