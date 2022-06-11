@@ -6,9 +6,9 @@ Tiny File Manager: Web based File Manager in PHP, Manage your files efficiently 
 ### How to Install
 
 ```
-wget --no-check-certificate https://github.com/lynxnexy/luci-theme-tano/releases/download/luci-theme-tano-20220314-all/luci-theme-tano-20220314-all.ipk
+wget --no-check-certificate https://github.com/lynxnexy/luci-app-tinyfilemanager/releases/download/luci-app-tinyfilemanager_2.4.7_all/luci-app-tinyfilemanager_2.4.7_all.ipk
 opkg update
-opkg install luci-theme-tano*.ipk
+opkg install luci-app-tinyfilemanager_2.4.7_all.ipk
 reboot
 ```
 
