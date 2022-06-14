@@ -23,7 +23,7 @@ reboot
 
 ![Videos](https://i.ibb.co/ZmYgZqk/Screenshot-2022-06-10-20-30-12-079.jpg)
 
-### Credits
+## Credits
 
 - [prasathmani](https://tinyfilemanager.github.io)
 - [lynxnexy](https://t.me/lynxnexy)
