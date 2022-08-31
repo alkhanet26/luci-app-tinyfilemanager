@@ -2759,6 +2759,9 @@ function fm_get_file_icon_class($path)
         case 'conf':
         case 'log':
         case 'htaccess':
+        case 'yaml':
+        case 'yml':
+        case 'toml':
             $img = 'fa fa-file-text-o';
             break;
         case 'css':
@@ -2828,6 +2831,7 @@ function fm_get_file_icon_class($path)
         case '3gp':
         case 'asf':
         case 'wmv':
+        case 'webm':
             $img = 'fa fa-file-video-o';
             break;
         case 'eml':
@@ -2925,7 +2929,8 @@ function fm_get_text_exts()
         'txt', 'css', 'ini', 'conf', 'log', 'htaccess', 'passwd', 'ftpquota', 'sql', 'js', 'json', 'sh', 'config',
         'php', 'php4', 'php5', 'phps', 'phtml', 'htm', 'html', 'shtml', 'xhtml', 'xml', 'xsl', 'm3u', 'm3u8', 'pls', 'cue',
         'eml', 'msg', 'csv', 'bat', 'twig', 'tpl', 'md', 'gitignore', 'less', 'sass', 'scss', 'c', 'cpp', 'cs', 'py',
-        'map', 'lock', 'dtd', 'svg', 'scss', 'asp', 'aspx', 'asx', 'asmx', 'ashx', 'jsx', 'jsp', 'jspx', 'cfm', 'cgi'
+        'map', 'lock', 'dtd', 'svg', 'scss', 'asp', 'aspx', 'asx', 'asmx', 'ashx', 'jsx', 'jsp', 'jspx', 'cfm', 'cgi',
+        'yml', 'yaml', 'toml'
     );
 }
 
@@ -2941,6 +2946,7 @@ function fm_get_text_mimes()
         'application/x-javascript',
         'image/svg+xml',
         'message/rfc822',
+        'application/json',
     );
 }
 
