@@ -4,5 +4,5 @@ uci add_list uhttpd.main.interpreter='.php=/usr/bin/php-cgi'
 uci add_list uhttpd.main.index_page='index.php'
 uci commit uhttpd
 
-/etc/init.d/uhttpd restart
+[ -f /etc/init.d/uhttpd ] && /etc/init.d/uhttpd restart
 exit 0
